@@ -1,6 +1,6 @@
 class StudentsController < ApplicationController
   def show
-    @student = Student.find(params[:id])
+    @student = @current_user
   end
 
   def new
@@ -19,11 +19,12 @@ class StudentsController < ApplicationController
   end
 
   def edit
-    @student = Student.find(params[:id])
+    @student = @current_user
   end
 
   def update
-    @student = Student.find(params[:id])
+    raise
+    @student = @current_user
     # To call an error I can just write raise
     @student.update_attributes(params[:student])
     redirect_to @student

@@ -1,3 +1,7 @@
 <h1>Welcome to Hogwarts</h1>
-<a href="/login">Login</a>
-<a href="">Signup</a>
+<% if current_user %>
+ <p>Hello <%= current_user.name %></p>
+ <% else %>
+  <a href="/login">Login</a>
+  <a href="">Signup</a>
+<% end %>
