@@ -7,6 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <% flash.each do |name, msg| %>
+    <%= content_tag :div, msg, :id => "flash#{name}" %>
+  <% end %>
+
   <nav>
     <%= link_to "Home", root_path %>
     <%= link_to "New Student", new_student_path %>

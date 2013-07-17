@@ -11,6 +11,8 @@ end
 
 gem 'sqlite3'
 
+gem 'bcrypt-ruby', require: 'bcrypt'
+
 group :development, :test do
   gem 'pry-rails'           # Causes rails console to open pry
                             # https://github.com/rweng/pry-rails

@@ -1,6 +1,11 @@
 Hogwartz::Application.routes.draw do
 
-  root :to => 'houses#index'
+  get "cat/sleep"
+
+  root to: 'houses#index'
+
+  get '/login' => 'session#new', as: 'login'
+  post '/login' => 'session#create'
 
   get   '/:house/students'    => 'houses#show',     as: :house
 

@@ -16,21 +16,21 @@ h2 = House.create(name: "Slytherin")
 h3 = House.create(name: "Ravenclaw")
 h4 = House.create(name: "Hufflepuff")
 
-s1 = Student.create(name: "Harry Potter")
-s2 = Student.create(name: "Ron Weasley")
-s3 = Student.create(name: "Hermione Granger")
+s1 = Student.create(name: "Harry Potter", password: '1234')
+s2 = Student.create(name: "Ron Weasley", password: '1234')
+s3 = Student.create(name: "Hermione Granger", password: '1234')
 
-s4 = Student.create(name: "Draco Malfoy")
-s5 = Student.create(name: "Vincent Crabbe")
-s6 = Student.create(name: "Gregory Goyle")
+s4 = Student.create(name: "Draco Malfoy", password: '1234')
+s5 = Student.create(name: "Vincent Crabbe", password: '1234')
+s6 = Student.create(name: "Gregory Goyle", password: '1234')
 
-s7 = Student.create(name: "Luna Lovegood")
-s8 = Student.create(name: "Cho Chang")
-s9 = Student.create(name: "Padma Patil")
+s7 = Student.create(name: "Luna Lovegood", password: '1234')
+s8 = Student.create(name: "Cho Chang", password: '1234')
+s9 = Student.create(name: "Padma Patil", password: '1234')
 
-s10 = Student.create(name: "Cedric Diggory")
-s11 = Student.create(name: "Zacharias Smith")
-s12 = Student.create(name: "Justin Finch-Fletchley")
+s10 = Student.create(name: "Cedric Diggory", password: '1234')
+s11 = Student.create(name: "Zacharias Smith", password: '1234')
+s12 = Student.create(name: "Justin Finch-Fletchley", password: '1234')
 
 h1.students = [s1, s2, s3]
 h2.students = [s4, s5, s6]
